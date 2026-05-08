@@ -1,0 +1,2 @@
+# ProyectoSaludMental
+Proyecto de Ciencia de Datos usando el dataset OSMI Mental Health in Tech Survey para predecir la variable treatment (búsqueda de tratamiento en salud mental).
