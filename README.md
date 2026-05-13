@@ -130,14 +130,14 @@ El Árbol de Decisión identificó correctamente el **95 % de los casos positivo
 
 | Variable | Importancia | Acumulado |
 |---|---|---|
-| `work_interfere` ⚠️ | 0.828 | 82.8 % |
+| `work_interfere`   | 0.828 | 82.8 % |
 | `family_history` | 0.054 | 88.3 % |
 | `benefits` | 0.040 | 92.3 % |
 | `anonymity` | 0.023 | 94.6 % |
 | `care_options` | 0.015 | 96.1 % |
 | Resto (17 variables) | 0.039 | 100 % |
 
-### ⚠️ Data leakage parcial en `work_interfere`
+### Data leakage parcial en `work_interfere`
 
 La pregunta que origina esta variable presupone la existencia de una condición de salud mental, introduciendo un **target leakage parcial**. El modelo que la excluye cae 19.8 puntos porcentuales de accuracy (82.1 % → 62.3 %), revelando que sin ella los predictores estructuralmente más sólidos son `benefits` y `anonymity` — variables directamente relacionadas con las políticas organizacionales del empleador.
 
